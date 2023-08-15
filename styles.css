@@ -7,8 +7,8 @@ body, h1, h2, h3, p {
 /* Set background and font styles */
 body {
   font-family: 'Poppins', Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #1f1f1f; /* Dark background */
+  color: #fff;
 }
 
 /* Header styles */
@@ -55,7 +55,7 @@ nav {
 .hero {
   text-align: center;
   padding: 100px 0;
-  background-color: #FF5733;
+  background-color: #1f1f1f;
   color: #fff;
 }
 
@@ -102,8 +102,8 @@ nav {
   display: flex;
   justify-content: space-around;
   padding: 80px 0;
-  background-color: #fff;
-  color: #333;
+  background-color: #1f1f1f;
+  color: #fff;
 }
 
 .feature {
