@@ -3,41 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dashboard-styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <title>Pixel Playgrounds - Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <title>Dashboard</title>
 </head>
 <body>
   <header>
     <nav>
-      <div class="logo">
-        <h1>Pixel Playgrounds</h1>
-      </div>
-      <ul class="nav-links">
-        <li><a href="dashboard.html" class="active">Dashboard</a></li>
-        <li><a href="#">Servers</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="logout.php">Log Out</a></li>
-      </ul>
+      <h1>Game Server Dashboard</h1>
+      <a href="logout.html">Logout</a>
     </nav>
   </header>
-
-  <section class="overview">
-    <h2>Server Overview</h2>
-    <!-- Place your overview content here -->
-  </section>
-
-  <section class="activity">
-    <h2>Recent Activity</h2>
-    <!-- Place your activity content here -->
-  </section>
-
-  <!-- Rest of your content -->
-
+  <main>
+    <section class="server-settings">
+      <h2>Server Settings</h2>
+      <form id="server-form">
+        <!-- Add server settings inputs here -->
+        <button type="submit">Save Settings</button>
+      </form>
+    </section>
+    <section class="game-selection">
+      <h2>Select a Game</h2>
+      <div class="game-buttons">
+        <button class="game-button" id="terraria">
+          <img src="terraria-icon.png" alt="Terraria">
+          Terraria
+        </button>
+        <button class="game-button" id="minecraft">
+          <img src="minecraft-icon.png" alt="Minecraft">
+          Minecraft
+        </button>
+        <button class="game-button" id="unturned">
+          <img src="unturned-icon.png" alt="Unturned">
+          Unturned
+        </button>
+      </div>
+    </section>
+    <section class="server-control">
+      <h2>Server Control</h2>
+      <button id="start-server">Start Server</button>
+      <button id="stop-server">Stop Server</button>
+    </section>
+  </main>
   <footer>
-    <div class="footer-content">
-      <p>&copy; 2023 Pixel Playgrounds. All rights reserved.</p>
-    </div>
+    <p>&copy; 2023 Game Server Hosting</p>
   </footer>
+  <script src="dashboard.js"></script>
 </body>
 </html>
